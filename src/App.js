@@ -3,13 +3,12 @@
 import styled from "styled-components";
 
 const RedColorStyled = styled.div`
-  background-color: black;
-  color: white;
+  background-color: ${(props) => props.color};
 `;
 
 export default function App() {
   return (
-    <RedColorStyled>
+    <RedColorStyled color="green">
       <div className="App">
         {/* <div className="App" style={{ backgroundColor: "red" }}> */}
         {/* <h1 className={styles.head}>Hello CodeSandbox</h1> */}
